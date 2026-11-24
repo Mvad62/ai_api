@@ -1,0 +1,24 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: en-US
+branch: Q0DeR-MaG1C-BrAnCh-Fo2-NoN-GiT-Or-No-C0MmIt
+nodes_managed: true
+exported_at: "2026-11-24T07:53:22Z"
+modules:
+    "":
+        dir_name: Telegram Chatbot with In-Memory Conversation Context
+        title: Telegram Chatbot with In-Memory Conversation Context
+        scope:
+            - .gitignore
+            - README.md
+            - api_client.py
+            - bot.py
+            - config.py
+            - context_manager.py
+            - prompt.txt
+            - requirements.txt
+            - .env.example
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []

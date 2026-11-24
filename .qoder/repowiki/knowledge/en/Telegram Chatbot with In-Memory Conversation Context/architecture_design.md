@@ -1,0 +1,6 @@
+Single-process, single-file-per-concern layout:
+- `bot.py` is the entry point: constructs `Bot`, `Dispatcher`, `Router`, a shared `ContextManager`, and an `AnyModelClient`, then wires `/start`, `/reset`, and the default message handler into the dispatcher.
+- `api_client.py` wraps `httpx.AsyncClient` to call `{base_url}/chat/completions` with Bearer-token auth; it raises a custom `APIClientError` on HTTP or malformed responses and returns `(answer_text, usage_dict)`.
+- `context_manager.py` holds per-user message lists keyed by Telegram user ID using `defaultdict(list)`, with one `asyncio.Lock` per user exposed via `lock_for()` so concurrent updates are serialized per conversation.
+- `config.py` loads `.env` via `python-dotenv` into a frozen `dataclass Config` with validation of required tokens and numeric ranges.
+Dependency direction is strictly `bot → (api_client, context_manager, config)`; there are no cross-imports between the three leaf modules. The LLM provider is abstracted behind the OpenAI-compatible endpoint, configurable via `ANYMODEL_BASE_URL`/`ANYMODEL_MODEL` for proxy use.

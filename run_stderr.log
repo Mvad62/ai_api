@@ -1,0 +1,15 @@
+2026-11-24 11:41:19,678 INFO aiogram.dispatcher: Start polling
+2026-11-24 11:41:19,684 INFO aiogram.dispatcher: Run polling for bot @aiapimvad_bot id=9176101641 - 'AiApiMvad'
+2026-11-24 11:41:19,837 INFO api_client: Sending chat completion parameters: model=cx/gpt-6.1-sol temperature=0.7 max_tokens=1000 message_count=1 message_roles=['user']
+2026-11-24 11:41:20,309 INFO aiogram.event: Update id=622781718 is handled. Duration 484 ms by bot id=9176101641
+2026-11-24 11:41:32,492 INFO httpx: HTTP Request: POST https://anymodel.org/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-24 11:41:32,500 INFO api_client: Chat completion succeeded: request_id=None usage={'prompt_tokens': 140, 'completion_tokens': 11, 'total_tokens': 151}
+2026-11-24 11:41:32,702 INFO aiogram.event: Update id=622781719 is handled. Duration 12858 ms by bot id=9176101641
+2026-11-24 11:41:32,704 INFO api_client: Sending chat completion parameters: model=cx/gpt-6.1-sol temperature=0.7 max_tokens=1000 message_count=3 message_roles=['user', 'assistant', 'user']
+2026-11-24 11:41:47,092 INFO httpx: HTTP Request: POST https://anymodel.org/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-24 11:41:47,107 INFO api_client: Chat completion succeeded: request_id=None usage={'prompt_tokens': 163, 'completion_tokens': 14, 'total_tokens': 177}
+2026-11-24 11:41:47,328 INFO aiogram.event: Update id=622781720 is handled. Duration 27421 ms by bot id=9176101641
+2026-11-24 11:41:48,834 INFO api_client: Sending chat completion parameters: model=cx/gpt-6.1-sol temperature=0.7 max_tokens=1000 message_count=5 message_roles=['user', 'assistant', 'user', 'assistant', 'user']
+2026-11-24 11:42:18,457 INFO httpx: HTTP Request: POST https://anymodel.org/v1/chat/completions "HTTP/1.1 200 OK"
+2026-11-24 11:42:18,464 INFO api_client: Chat completion succeeded: request_id=None usage={'prompt_tokens': 189, 'completion_tokens': 24, 'total_tokens': 213}
+2026-11-24 11:42:18,757 INFO aiogram.event: Update id=622781721 is handled. Duration 29921 ms by bot id=9176101641

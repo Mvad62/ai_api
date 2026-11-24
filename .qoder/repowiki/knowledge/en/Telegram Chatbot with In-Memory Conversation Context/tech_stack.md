@@ -1,0 +1,1 @@
+Python async stack: aiogram 3.x for Telegram polling, httpx async HTTP client for the LLM API, python-dotenv for `.env` loading. Defaults to OpenAI's Chat Completions endpoint (`https://api.openai.com/v1/chat/completions`) but works with any compatible proxy.
