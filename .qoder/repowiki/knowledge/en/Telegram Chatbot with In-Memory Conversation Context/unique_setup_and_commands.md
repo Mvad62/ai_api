@@ -1,1 +1,0 @@
-Run via `py -m venv .venv && pip install -r requirements.txt`, copy `.env.example` to `.env` and set `BOT_TOKEN` + `ANYMODEL_KEY`; start with `python bot.py`. On Telegram `Flood control exceeded` during `GetMe`, the bot retries after the server-specified seconds — do not run multiple copies sharing one token.

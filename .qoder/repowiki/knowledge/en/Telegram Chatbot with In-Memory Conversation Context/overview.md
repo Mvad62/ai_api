@@ -1,1 +1,0 @@
-Minimal aiogram 3 Telegram bot that maintains per-user chat history in process memory and forwards messages to an OpenAI-compatible Chat Completions API.

@@ -1,4 +1,0 @@
-- Per-user concurrency safety is enforced by acquiring `contexts.lock_for(user_id)` around every read-modify-write sequence on a user's message list.
-- Configuration values are loaded from environment variables through a frozen `dataclass Config` with explicit range/positivity validation before construction.
-- External API failures are normalized into a module-level `APIClientError` exception, letting the bot handler translate them into a user-facing error message.
-- Sensitive data (message content, API keys) is deliberately excluded from logs; only metadata such as model, temperature, max_tokens, message role counts, request IDs, and usage are logged.
